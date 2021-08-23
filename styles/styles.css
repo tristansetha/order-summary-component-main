@@ -1,0 +1,173 @@
+/* General styles */
+* {
+  font-family: "Red Hat Display", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* CONTAINERS */
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+  padding: 20% 8%;
+}
+
+.card {
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  flex-direction: column;
+  height: 567px;
+  width: 327px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.illustration-container {
+  border-radius: 25px 25px 0 0;
+  background: url("../images/illustration-hero.svg");
+  height: 28%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.order-summary-container {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+
+.button-container {
+  border-radius: 0 0 25px 25px;
+  height: 22%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+/* CHILDREN */
+
+/** ORDER SUMMARY CONTAINER */
+
+.info-summary {
+	padding-top: 20px;
+  text-align: center;
+  font-weight: 900;
+	color: hsl(223, 47%, 23%);
+}
+
+.info-copy {
+	padding: 22px;
+	line-height: 1.6;
+	text-align: center;
+  font-size: 16px;
+	font-weight:500;
+	color: hsl(224, 23%, 55%);
+}
+.plan-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	height: 100%;
+}
+
+.plan-summary {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	background-color: hsl(225, 100%, 98%);
+	height: 70%;
+	width: 87%;
+	border-radius: 15px;
+}
+
+
+
+.plan-icon-music {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.plan-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.plan-info-description {
+	font-weight: 900;
+	color: hsl(223, 47%, 23%);
+}
+
+.plan-info-price {
+	color: hsl(224, 23%, 55%);
+}
+
+.plan-change-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+}
+
+.plan-change-button >a {
+	color: hsl(245, 75%, 52%);
+}
+
+
+/* BUTTON CONTAINER  */
+
+.button-process {
+	width: 100%;
+	height: 39%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-cancel {
+	width: 100%;
+	height: 61%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-process > button {
+	font-weight: 700;
+	display: inline-block;
+	width: 87%;
+	height: 100%;
+	font-size: 16px;
+	background-color:hsl(245, 75%, 52%);
+	color: hsl(225, 100%, 98%);
+	border-radius: 12px;
+	border: none;
+}
+
+.button-cancel > button {
+	background: none;
+	color:hsl(224, 23%, 55%);
+	font-weight: 700;
+	border: none
+}
+
+.button-process > button:hover {
+	cursor: pointer;
+}
+
+.button-cancel > button:hover {
+	cursor: pointer;
+}
+
