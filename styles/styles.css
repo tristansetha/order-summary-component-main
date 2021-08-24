@@ -59,19 +59,19 @@ body {
 /** ORDER SUMMARY CONTAINER */
 
 .info-summary {
-	padding-top: 20px;
+	padding-top: 30px;
   text-align: center;
   font-weight: 900;
 	color: hsl(223, 47%, 23%);
 }
 
 .info-copy {
-	padding: 22px;
 	line-height: 1.6;
 	text-align: center;
   font-size: 16px;
 	font-weight:500;
 	color: hsl(224, 23%, 55%);
+	padding:  25px 30px 0 30px;
 }
 .plan-container {
 	display: flex;
@@ -102,12 +102,16 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
+	font-size: 14px;
+	padding-left: 10px;
+
 }
 
 .plan-info-description {
 	font-weight: 900;
 	color: hsl(223, 47%, 23%);
+	/* border: 1px solid black; */
 }
 
 .plan-info-price {
@@ -119,6 +123,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	font-weight: 700;
+	font-size: 12px;
 }
 
 .plan-change-button >a {
@@ -134,6 +139,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 }
 
 .button-cancel {
@@ -149,18 +155,24 @@ body {
 	display: inline-block;
 	width: 87%;
 	height: 100%;
-	font-size: 16px;
 	background-color:hsl(245, 75%, 52%);
 	color: hsl(225, 100%, 98%);
 	border-radius: 12px;
 	border: none;
+	font-size: 16px;
+	box-shadow: 0 15px 50px hsl(224, 23%, 55%)
+	/* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+	/* https://css-tricks.com/almanac/properties/b/box-shadow/ */
+
 }
 
 .button-cancel > button {
 	background: none;
 	color:hsl(224, 23%, 55%);
 	font-weight: 700;
-	border: none
+	border: none;
+	font-size: 16px;
+
 }
 
 .button-process > button:hover {
