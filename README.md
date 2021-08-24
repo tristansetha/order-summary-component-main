@@ -66,7 +66,6 @@ Learn about mobile first development
 
 ## Author
 
-- Website - [tristan](https://tristans.space)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/tristansetha)
 
 <!-- ## Acknowledgments -->
