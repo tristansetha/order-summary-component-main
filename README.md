@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/tristansetha/order-summary-component-main)
-- Live Site URL: [Add live site URL here](https://tristansetha.github.io/order-summary-component-main)
+<!-- - Solution URL: [github](https://github.com/tristansetha/order-summary-component-main) -->
+- Live Site URL: [Live Site](https://tristansetha.github.io/order-summary-component-main)
 
 ## My process
 
