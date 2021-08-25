@@ -1,3 +1,11 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
 /* General styles */
 * {
   font-family: "Red Hat Display", sans-serif;
@@ -8,20 +16,31 @@
 
 /* CONTAINERS */
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pale-blue);
+  padding: 20% 8%;
+}
+
+main {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: hsl(225, 100%, 94%);
-  padding: 20% 8%;
+  background: url("../images/pattern-background-mobile.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .card {
-  background-color: hsl(225, 100%, 98%);
+  background-color: var(--very-pale-blue);
   display: flex;
   flex-direction: column;
   height: 567px;
@@ -48,10 +67,10 @@ body {
 .button-container {
   border-radius: 0 0 25px 25px;
   height: 22%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 /* CHILDREN */
@@ -59,132 +78,132 @@ body {
 /** ORDER SUMMARY CONTAINER */
 
 .info-summary {
-	padding-top: 30px;
+  padding-top: 30px;
   text-align: center;
-	color: hsl(223, 47%, 23%);
+  color: var(--dark-blue);
 }
 
 .info-summary h1 {
-	font-size: 22px;
-	font-weight: 900;
-
+  font-size: 22px;
+  font-weight: 900;
 }
 
 .info-copy {
-	line-height: 1.6;
-	text-align: center;
+  line-height: 1.6;
+  text-align: center;
   font-size: 15px;
-	font-weight:500;
-	color: hsl(224, 23%, 55%);
-	padding:  25px 30px 0 30px;
+  font-weight: 500;
+  color: var(--dark-blue);
+  padding: 25px 30px 0 30px;
 }
 .plan-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 16px;
-	height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  height: 100%;
 }
 
 .plan-summary {
-	display: grid;
-	grid-template-columns: 1fr 2fr 1fr;
-	background-color: hsl(225, 100%, 98%);
-	height: 70%;
-	width: 87%;
-	border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: var(--very-pale-blue);
+  height: 70%;
+  width: 87%;
+  border-radius: 15px;
 }
 
-
-
 .plan-icon-music {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .plan-info {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	font-size: 14px;
-	padding-left: 10px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 14px;
+  padding-left: 10px;
 }
 
 .plan-info-description {
-	font-weight: 900;
-	color: hsl(223, 47%, 23%);
-	/* border: 1px solid black; */
+  font-weight: 900;
+  color: var(--dark-blue);
+  /* border: 1px solid black; */
 }
 
 .plan-info-price {
-	color: hsl(224, 23%, 55%);
+  color: var(--desaturated-blue);
 }
 
 .plan-change-button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: 700;
-	font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 12px;
 }
 
-.plan-change-button >a {
-	color: hsl(245, 75%, 52%);
+.plan-change-button > a {
+  color: var(--bright-blue);
 }
-
 
 /* BUTTON CONTAINER  */
 
 .button-process {
-	width: 100%;
-	height: 39%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
+  width: 100%;
+  height: 39%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-cancel {
-	width: 100%;
-	height: 61%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  width: 100%;
+  height: 61%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-process > button {
-	font-weight: 700;
-	display: inline-block;
-	width: 87%;
-	height: 100%;
-	background-color:hsl(245, 75%, 52%);
-	color: hsl(225, 100%, 98%);
-	border-radius: 12px;
-	border: none;
-	font-size: 16px;
-	box-shadow: 0 15px 50px hsl(224, 23%, 55%)
-	/* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
-	/* https://css-tricks.com/almanac/properties/b/box-shadow/ */
-
+  font-weight: 700;
+  display: inline-block;
+  width: 87%;
+  height: 100%;
+  background-color: var(--bright-blue);
+  color: hsl(225, 100%, 98%);
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  box-shadow: 0 15px 50px var(--desaturated-blue);
+  /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+  /* https://css-tricks.com/almanac/properties/b/box-shadow/ */
 }
 
 .button-cancel > button {
-	background: none;
-	color:hsl(224, 23%, 55%);
-	font-weight: 700;
-	border: none;
-	font-size: 16px;
-
+  background: none;
+  color: var(--desaturated-blue);
+  font-weight: 700;
+  border: none;
+  font-size: 16px;
 }
 
 .button-process > button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .button-cancel > button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
+@media (min-width: 1440px) {
+  main {
+    background: url("../images/pattern-background-desktop.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
