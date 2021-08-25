@@ -51,8 +51,9 @@ Big -> Medium -> Small
 
 ### What I learned
 
-Learned the importance of planning before starting to code. Start with a low fidelity prototype.
+Learned the importance of planning before starting to code. Start with a low fidelity prototype.   
 
+CSS variables
 
 ### Continued development
 
